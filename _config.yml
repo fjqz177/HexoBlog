@@ -134,38 +134,3 @@ live2d:
     height: 300
   mobile:
     show: true
-
-backup:
-    type: git
-    repository:
-    ##branchName是分支名称，把branchName改为你刚刚新建的分支名称
-    ##github与gitcafe是托管平台
-       github: git@github.com:fjqz177/fjqz177.github.io.git,source
-
-#deploy:
-#  type: git
-#  repository: git@github.com:fjqz177/fjqz177.github.io.git
-#  branch: master
-  
-#markdown:
-#  preset: 'default'
-#  render:
-#    html: true
-#    xhtmlOut: false
-#    langPrefix: 'language-'
-#    breaks: true
-#    linkify: true
-#    typographer: true
-#    quotes: '“”‘’'
-#  enable_rules:
-#  disable_rules:
-#  plugins:
-#  anchors:
-#    level: 2
-#    collisionSuffix: ''
-#    permalink: false
-#    permalinkClass: 'header-anchor'
-#    permalinkSide: 'left'
-#    permalinkSymbol: '¶'
-#    case: 0
-#    separator: '-'
