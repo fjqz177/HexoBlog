@@ -812,9 +812,9 @@ pdf:
 
 # Mermaid tag
 mermaid:
-  enable: false
+  enable: true
   # Available themes: default | dark | forest | neutral
-  theme: forest
+  theme: default
 
 
 # ---------------------------------------------------------------
@@ -1007,3 +1007,4 @@ canvas_nest:
   
 # Post wordcount display settings
 # Dependencies: https://github.com/theme-next/hexo-symbols-count-time
+

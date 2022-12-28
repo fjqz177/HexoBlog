@@ -1,7 +1,11 @@
 ---
 title: Markdown测试
 date: 2022-11-19 19:43:41
+categories:
+ - 笔记
 tags:
+ - Markdown
+mathjax: true
 ---
 做一个Markdown页面渲染测试
 <!--more-->
@@ -71,26 +75,26 @@ $$
 
 ```mermaid
 graph TD;
-  A-->B;
-  A-->C;
-  B-->D;
-  C-->D;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
 ```
 
 ### 5. 高效绘制[序列图](https://github.com/knsv/mermaid#sequence-diagram)
 
 ```mermaid
 sequenceDiagram
-  participant Alice
-  participant Bob
-  Alice->John: Hello John, how are you?
-  loop Healthcheck
-      John->John: Fight against hypochondria
-  end
-  Note right of John: Rational thoughts <br/>prevail...
-  John-->Alice: Great!
-  John->Bob: How about you?
-  Bob-->John: Jolly good!
+    participant Alice
+    participant Bob
+    Alice->John: Hello John, how are you?
+    loop Healthcheck
+        John->John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts <br/>prevail...
+    John-->Alice: Great!
+    John->Bob: How about you?
+    Bob-->John: Jolly good!
 ```
 
 ### 6. 高效绘制[甘特图](https://github.com/knsv/mermaid#gantt-diagram)
@@ -99,19 +103,19 @@ sequenceDiagram
 
 ```mermaid
 gantt
-  title 项目开发流程
-  section 项目确定
-    需求分析       :a1, 2019-06-22, 3d
-    可行性报告     :after a1, 5d
-    概念验证       : 5d
-  section 项目实施
-    概要设计      :2019-07-05  , 5d
-    详细设计      :2019-07-08, 10d
-    编码          :2019-07-15, 10d
-    测试          :2019-07-22, 5d
-  section 发布验收
-    发布: 2d
-    验收: 3d
+    title 项目开发流程
+    section 项目确定
+        需求分析       :a1, 2019-06-22, 3d
+        可行性报告     :after a1, 5d
+        概念验证       : 5d
+    section 项目实施
+        概要设计      :2019-07-05  , 5d
+        详细设计      :2019-07-08, 10d
+        编码          :2019-07-15, 10d
+        测试          :2019-07-22, 5d
+    section 发布验收
+        发布: 2d
+        验收: 3d
 ```
 
 ### 8. 绘制表格

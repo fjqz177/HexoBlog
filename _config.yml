@@ -108,9 +108,6 @@ deploy:
   type: git
   repo: https://github.com/fjqz177/fjqz177.github.io
   branch: master
-#  type: git
-#  repo: https://gitee.com/fjqz177/fjqz177
-#  branch: master
 
 search:
   path: search.xml
@@ -136,18 +133,20 @@ live2d:
     show: true
 
 markdown:
-  preset: "default"
+  preset: 'default'
   render:
     html: true
     xhtmlOut: false
-    langPrefix: "language-"
+    langPrefix: 'language-'
     breaks: true
     linkify: true
     typographer: true
-    quotes: "“”‘’"
+    quotes: '“”‘’'
   enable_rules:
   disable_rules:
   plugins:
+    - markdown-it-footnote
+    - markdown-it-named-headings
     - markdown-it-abbr
     - markdown-it-cjk-breaks
     - markdown-it-deflist
@@ -170,10 +169,47 @@ markdown:
       options: danger
   anchors:
     level: 2
-    collisionSuffix: ""
+    collisionSuffix: ''
     permalink: false
-    permalinkClass: "header-anchor"
-    permalinkSide: "left"
-    permalinkSymbol: "¶"
+    permalinkClass: 'header-anchor'
+    permalinkSide: 'left'
+    permalinkSymbol: '¶'
     case: 0
-    separator: "-"
+    separator: 
+    
+# Math Formulas Render Support
+math:
+  # Default (true) will load mathjax / katex script on demand.
+  # That is it only render those page which has `mathjax: true` in Front-matter.
+  # If you set it to false, it will load mathjax / katex srcipt EVERY PAGE.
+  per_page: true
+ 
+  # hexo-renderer-pandoc (or hexo-renderer-kramed) required for full MathJax support.
+  mathjax:
+    enable: true
+    # See: https://mhchem.github.io/MathJax-mhchem/
+    mhchem: false
+ 
+  # hexo-renderer-markdown-it-plus (or hexo-renderer-markdown-it with markdown-it-katex plugin) required for full Katex support.
+  katex:
+    enable: false
+    # See: https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex
+    copy_tex: false
+
+mathjax:
+  tags: none # or 'ams' or 'all'
+  single_dollars: true # enable single dollar signs as in-line math delimiters
+  cjk_width: 0.9 # relative CJK char width
+  normal_width: 0.6 # relative normal (monospace) width
+  append_css: true # add CSS to pages rendered by MathJax
+  every_page: true # if true, every page will be rendered by MathJax regardless the `mathjax` setting in Front-matter
+  
+  # mermaid chart
+mermaid: ## mermaid url https://github.com/knsv/mermaid
+  enable: true  
+  # default true
+  version: "7.1.2"
+  # default v7.1.2
+  options:  
+  # find more api options from https://github.com/knsv/mermaid/blob/master/src/mermaidAPI.js
+  #startOnload: true  // default true
