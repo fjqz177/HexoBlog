@@ -272,10 +272,16 @@
 <h2 id="如何使用">如何使用</h2>
 <p><strong>微注</strong>：清空目前这份默认文档，即处于可使用态。<a target="_blank" rel="noopener" href="https://markdown.lovejade.cn/?utm_source=markdown.lovejade.cn">Arya</a> 另一大优点在于：编辑内容只会在您本地进行保存，不会上传您的数据至服务器，<strong>绝不窥测用户个人隐私，可放心使用</strong>；Github 源码：<a target="_blank" rel="noopener" href="https://github.com/nicejade/markdown-online-editor">markdown-online-editor</a>，部分功能仍在开发🚧，敬请期待。</p>
 <p>默认为<a target="_blank" rel="noopener" href="https://hacpai.com/article/1577370404903?utm_source=github.com">所见即所得</a>模式，可通过 <code>⌘-⇧-M</code>（<code>Ctrl-⇧-M</code>）进行切换；或通过以下方式：</p>
-<ul>
-<li>所见即所得：<code>⌘-⌥-7</code>（<code>Ctrl-alt-7</code>）；</li>
-<li>即时渲染：<code>⌘-⌥-8</code>（<code>Ctrl-alt-8</code>）；</li>
-<li>分屏渲染：<code>⌘-⌥-9</code>（<code>Ctrl-alt-9</code>）；</li>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>所见即所得：<code>⌘-⌥-7</code>（<code>Ctrl-alt-7</code>）；</p>
+</li>
+<li class="lvl-2">
+<p>即时渲染：<code>⌘-⌥-8</code>（<code>Ctrl-alt-8</code>）；</p>
+</li>
+<li class="lvl-2">
+<p>分屏渲染：<code>⌘-⌥-9</code>（<code>Ctrl-alt-9</code>）；</p>
+</li>
 </ul>
 <h3 id="PPT-预览">PPT 预览</h3>
 <p>如果您用作 <code>PPT</code> 预览（入口在 <code>设置</code>中），需要注意，这里暂还不能支持各种图表的渲染；您可以使用 <code>---</code> 来定义水平方向上幻灯片，用 <code>--</code> 来定义垂直幻灯片；更多设定可以参见 <a target="_blank" rel="noopener" href="https://github.com/hakimel/reveal.js#table-of-contents">RevealJs 文档</a>。</p>
@@ -284,19 +290,43 @@
 <p><a target="_blank" rel="noopener" href="https://nicelinks.site/tags/Markdown/?utm_source=markdown.lovejade.cn">Markdown</a> 是一种方便记忆、书写的纯文本标记语言，用户可以使用这些标记符号，以最小的输入代价，生成极富表现力的文档：譬如您正在阅读的这份文档。它使用简单的符号标记不同的标题，分割不同的段落，<strong>粗体</strong>、<em>斜体</em> 或者<a target="_blank" rel="noopener" href="https://vue-cli3.lovejade.cn/explore/">超文本链接</a>，更棒的是，它还可以：</p>
 <hr>
 <h3 id="1-制作待办事宜-Todo-列表">1. 制作待办事宜 <code>Todo</code> 列表</h3>
-<ul>
-<li>[x] 🎉 通常<code>Markdown</code> 解析器自带的基本功能；</li>
-<li>[x] 🍀 支持<strong>流程图</strong>、<strong>甘特图</strong>、<strong>时序图</strong>、<strong>任务列表</strong>；</li>
-<li>[x] 🏁 支持粘贴 HTML 自动转换为 Markdown；</li>
-<li>[x] 💃🏻 支持插入原生 Emoji、设置常用表情列表；</li>
-<li>[x] 🚑 支持编辑内容保存<strong>本地存储</strong>，防止意外丢失；</li>
-<li>[x] 📝 支持<strong>实时预览</strong>，主窗口大小拖拽，字符计数；</li>
-<li>[x] 🛠 支持常用快捷键(<strong>Tab</strong>)，及代码块添加复制</li>
-<li>[x] ✨ 支持<strong>导出</strong>携带样式的 PDF、PNG、JPEG 等；</li>
-<li>[x] ✨ 升级 Vditor，新增对<code>echarts</code> 图表的支持；</li>
-<li>[x] 👏 支持检查并格式化 Markdown 语法，使其专业；</li>
-<li>[x] 🦑 支持五线谱、及<a target="_blank" rel="noopener" href="https://github.com/b3log/vditor/issues/117?utm_source=hacpai.com#issuecomment-526986052">部分站点、视频、音频解析</a>；</li>
-<li>[x] 🌟 增加对<strong>所见即所得</strong>编辑模式的支持(<code>⌘-⇧-M</code>)；</li>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><input type="checkbox" id="checkbox0" checked="true"><label for="checkbox0">🎉 通常</label><code>Markdown</code> 解析器自带的基本功能；</p>
+</li>
+<li class="lvl-2">
+<p><input type="checkbox" id="checkbox1" checked="true"><label for="checkbox1">🍀 支持</label><strong>流程图</strong>、<strong>甘特图</strong>、<strong>时序图</strong>、<strong>任务列表</strong>；</p>
+</li>
+<li class="lvl-2">
+<p><input type="checkbox" id="checkbox2" checked="true"><label for="checkbox2">🏁 支持粘贴 HTML 自动转换为 Markdown；</label></p>
+</li>
+<li class="lvl-2">
+<p><input type="checkbox" id="checkbox3" checked="true"><label for="checkbox3">💃🏻 支持插入原生 Emoji、设置常用表情列表；</label></p>
+</li>
+<li class="lvl-2">
+<p><input type="checkbox" id="checkbox4" checked="true"><label for="checkbox4">🚑 支持编辑内容保存</label><strong>本地存储</strong>，防止意外丢失；</p>
+</li>
+<li class="lvl-2">
+<p><input type="checkbox" id="checkbox5" checked="true"><label for="checkbox5">📝 支持</label><strong>实时预览</strong>，主窗口大小拖拽，字符计数；</p>
+</li>
+<li class="lvl-2">
+<p><input type="checkbox" id="checkbox6" checked="true"><label for="checkbox6">🛠 支持常用快捷键(</label><strong>Tab</strong>)，及代码块添加复制</p>
+</li>
+<li class="lvl-2">
+<p><input type="checkbox" id="checkbox7" checked="true"><label for="checkbox7">✨ 支持</label><strong>导出</strong>携带样式的 PDF、PNG、JPEG 等；</p>
+</li>
+<li class="lvl-2">
+<p><input type="checkbox" id="checkbox8" checked="true"><label for="checkbox8">✨ 升级 Vditor，新增对</label><code>echarts</code> 图表的支持；</p>
+</li>
+<li class="lvl-2">
+<p><input type="checkbox" id="checkbox9" checked="true"><label for="checkbox9">👏 支持检查并格式化 Markdown 语法，使其专业；</label></p>
+</li>
+<li class="lvl-2">
+<p><input type="checkbox" id="checkbox10" checked="true"><label for="checkbox10">🦑 支持五线谱、及</label><a target="_blank" rel="noopener" href="https://github.com/b3log/vditor/issues/117?utm_source=hacpai.com#issuecomment-526986052">部分站点、视频、音频解析</a>；</p>
+</li>
+<li class="lvl-2">
+<p><input type="checkbox" id="checkbox11" checked="true"><label for="checkbox11">🌟 增加对</label><strong>所见即所得</strong>编辑模式的支持(<code>⌘-⇧-M</code>)；</p>
+</li>
 </ul>
 <hr>
 <h3 id="2-书写一个质能守恒公式-LaTeX">2. 书写一个质能守恒公式[^LaTeX]</h3>
