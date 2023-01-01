@@ -39,5 +39,8 @@
     "markdown-it-footnote": "^3.0.3",
     "markdown-it-imsize": "^2.0.1",
     "markdown-it-named-headings": "^1.1.0"
+  },
+  "scripts": {
+    "build": "hexo clean && hexo generate"
   }
 }
