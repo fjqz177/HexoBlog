@@ -15,7 +15,7 @@ timezone: ''
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://fjqz177.github.io/fjqz177.github.io/
 root: /
-permalink: :year/:month/:day/:title/
+permalink: posts/:abbrlink/  #文章结尾不带 .html
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -213,3 +213,18 @@ mermaid: ## mermaid url https://github.com/knsv/mermaid
   options:  
   # find more api options from https://github.com/knsv/mermaid/blob/master/src/mermaidAPI.js
   #startOnload: true  // default true
+  
+# hexo-abbrlink
+abbrlink:
+  alg: crc16      #支持crc16和crc32算法（默认crc16）
+  rep: dec        #支持dec和hex值（默认dec）
+  drafts: false   #(true)Process draft,(false)Do not process draft. false(default) 
+  # Generate categories from directory-tree
+  # depth: the max_depth of directory-tree you want to generate, should > 0
+  auto_category:
+     enable: true  #true(default)
+     depth:        #3(default)
+     over_write: false 
+  auto_title: false #enable auto title, it can auto fill the title by path
+  auto_date: false #enable auto date, it can auto fill the date by time today
+  force: false #enable force mode,in this mode, the plugin will ignore the cache, and calc the abbrlink for every post even it already had abbrlink.
