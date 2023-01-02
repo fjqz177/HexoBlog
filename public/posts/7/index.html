@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.2">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"fjqz177.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="先带大家看一下我的Github首页  酷吧，虽然咱代码不会写，但气势绝对不能输，逼格总是要先装起来的，装着装着，说不定，就会写代码了呢！！！（大误 😄） 接下来就教你们如何装逼">
+<meta property="og:type" content="article">
+<meta property="og:title" content="终极Github个人主页美化教程">
+<meta property="og:url" content="https://fjqz177.github.io/fjqz177.github.io/posts/7/index.html">
+<meta property="og:site_name" content="fjqz177的Hexo博客">
+<meta property="og:description" content="先带大家看一下我的Github首页  酷吧，虽然咱代码不会写，但气势绝对不能输，逼格总是要先装起来的，装着装着，说不定，就会写代码了呢！！！（大误 😄） 接下来就教你们如何装逼">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img-1316367741.cos.ap-shanghai.myqcloud.com/img/202301012334640.gif">
+<meta property="og:image" content="https://img-1316367741.cos.ap-shanghai.myqcloud.com/img/202301012343960.jpg">
+<meta property="og:image" content="https://img-1316367741.cos.ap-shanghai.myqcloud.com/img/202301012350411.jpg">
+<meta property="og:image" content="https://readme-typing-svg.herokuapp.com?font=consolas&weight=100&size=45&duration=4000&pause=4000&center=%E7%9C%9F%E7%9A%84&vCenter=%E7%9C%9F%E7%9A%84&multiline=true&width=420&height=70&lines=fjqz177.github.io">
+<meta property="og:image" content="https://img-1316367741.cos.ap-shanghai.myqcloud.com/img/202301020010223.png">
+<meta property="og:image" content="https://img.shields.io/badge/dynamic/json?color=272626&amp;label=Github&amp;query=%24.data.totalSubs&amp;suffix=%20followers&amp;url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dgithub%26queryKey%3Dfjqz177">
+<meta property="og:image" content="https://raw.githubusercontent.com/fjqz177/fjqz177/main/assets/github-contribution-grid-snake.svg">
+<meta property="og:image" content="https://img-1316367741.cos.ap-shanghai.myqcloud.com/img/202301020102436.jpg">
+<meta property="og:image" content="https://img-1316367741.cos.ap-shanghai.myqcloud.com/img/202301020105189.jpg">
+<meta property="og:image" content="https://github-readme-stats.vercel.app/api?username=fjqz177">
+<meta property="og:image" content="https://github-readme-stats.vercel.app/api/top-langs/?username=fjqz177&layout=compact&langs_count=8">
+<meta property="og:image" content="https://github-readme-activity-graph.cyclic.app/graph?username=fjqz177&amp;theme=github-light">
+<meta property="og:image" content="https://img-1316367741.cos.ap-shanghai.myqcloud.com/img/202301020114512.jpg">
+<meta property="og:image" content="https://img-1316367741.cos.ap-shanghai.myqcloud.com/img/202301020123481.jpg">
+<meta property="og:image" content="https://img-1316367741.cos.ap-shanghai.myqcloud.com/img/202301020127540.jpg">
+<meta property="article:published_time" content="2023-01-01T15:10:26.000Z">
+<meta property="article:modified_time" content="2023-01-02T17:32:20.933Z">
+<meta property="article:author" content="fjqz177">
+<meta property="article:tag" content="Markdown">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-1316367741.cos.ap-shanghai.myqcloud.com/img/202301012334640.gif">
+
+<link rel="canonical" href="https://fjqz177.github.io/fjqz177.github.io/posts/7/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>终极Github个人主页美化教程 | fjqz177的Hexo博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+    <a target="_blank" rel="noopener" href="https://github.com/fjqz177" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#64CEAA; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">fjqz177的Hexo博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://fjqz177.github.io/fjqz177.github.io/posts/7/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/my_avatar.jpg">
+      <meta itemprop="name" content="fjqz177">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          终极Github个人主页美化教程
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2023-01-01 23:10:26" itemprop="dateCreated datePublished" datetime="2023-01-01T23:10:26+08:00">2023-01-01</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-01-03 01:32:20" itemprop="dateModified" datetime="2023-01-03T01:32:20+08:00">2023-01-03</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">笔记</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/posts/7/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/7/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>10k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>9 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>先带大家看一下我的<a target="_blank" rel="noopener" href="https://github.com/fjqz177">Github首页</a>
+<img src="https://img-1316367741.cos.ap-shanghai.myqcloud.com/img/202301012334640.gif">
+酷吧，虽然咱代码不会写，但气势绝对不能输，逼格总是要先装起来的，装着装着，说不定，就会写代码了呢！！！（大误
+😄）</p>
+<p>接下来就教你们如何装逼</p>
+<span id="more"></span>
+<h1 id="准备工作">0.准备工作</h1>
+<p>首先需要新建一个和 Github 用户名相同的仓库 <img src="https://img-1316367741.cos.ap-shanghai.myqcloud.com/img/202301012343960.jpg">
+记得勾选<code>Add a README file</code>这个选项
+接下来在自己电脑上创建一个<code>.md</code>后缀的文件，名称随意，并用支持<code>Markdown</code>语法的编辑器编辑，当然嫌麻烦可以用<a target="_blank" rel="noopener" href="https://md.mzr.me/">https://md.mzr.me</a>或者其他你喜欢的在线编辑器编辑</p>
+<h1 id="带有打字特效的文字">1.带有打字特效的文字</h1>
+打字特效生成网站：<a target="_blank" rel="noopener" href="https://readme-typing-svg.herokuapp.com/demo/">Readme Typing SVG -
+Demo Site</a> <img src="https://img-1316367741.cos.ap-shanghai.myqcloud.com/img/202301012350411.jpg">
+里面有很多自定义选项，大家可以根据自己喜好进行调整
+调整完以后点击<code>Markdown</code>下的<code>Copy To Clipboard</code>，然后粘贴进刚才的<code>.md</code>编辑器里
+效果图
+<p align="center">
+<a href="https://fjqz177.github.io"><img src="https://readme-typing-svg.herokuapp.com?font=consolas&weight=100&size=45&duration=4000&pause=4000&center=%E7%9C%9F%E7%9A%84&vCenter=%E7%9C%9F%E7%9A%84&multiline=true&width=420&height=70&lines=fjqz177.github.io" alt="Typing SVG"></a>
+</p>
+<h1 id="社交关注者数目小牌子">2.社交关注者数目小牌子</h1>
+<p>用 Substats 配合<a target="_blank" rel="noopener" href="https://www.shields.io">shields.io</a>制作动态小牌子</p>
+<p>动态图标</p>
+<p>创建动态图标方法：点击进入这个网页 <a target="_blank" rel="noopener" href="https://shields.io/#dynamic-badge">shields.io
+dynamic-badge</a></p>
+<blockquote>
+<p><code>data type</code>选择<code>json</code>
+<code>label</code>写上数据牌左侧你想展示的文字，比如我想展示的是<code>GitHub</code>
+<code>data url</code>，找到自己想展示的<code>API URL</code>，比如我的<code>GitHub URL</code>就是：<code>https://api.spencerwoo.com/substats/?source=github&amp;queryKey=fjqz177</code>。一般都只需要修改<code>source</code>后面的目标服务器以及<code>queryKey</code>后面的请求数据标签，前者一般都是平台名，后者一般都是用户名
+<code>query</code>填：<code>$.data.totalSubs</code>
+<code>color</code>填写一个十六进制的颜色代码，前面不加#
+剩下两个分别是数据牌右侧展示数据的前缀和后缀，前缀可以不填，后缀可选填<code>followers</code></p>
+</blockquote>
+<p><img src="https://img-1316367741.cos.ap-shanghai.myqcloud.com/img/202301020010223.png">
+然后点击<code>Make Badge</code>即可生成
+以如下格式填入刚才生成的链接，并把它粘贴进<code>.md</code>编辑器内
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![](https://img.shields.io/badge/dynamic/json?color=272626&amp;label=Github&amp;query=%24.data.totalSubs&amp;suffix=%20followers&amp;url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dgithub%26queryKey%3Dfjqz177)</span><br></pre></td></tr></table></figure> 效果如下 <img src="https://img.shields.io/badge/dynamic/json?color=272626&amp;label=Github&amp;query=%24.data.totalSubs&amp;suffix=%20followers&amp;url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dgithub%26queryKey%3Dfjqz177">
+大家可以查阅<code>Substats API</code>的文档：<a target="_blank" rel="noopener" href="https://substats.spencerwoo.com/">Home | Substats Docs
+(spencerwoo.com)</a>看看支持哪些平台以及<code>source</code>后面的目标服务器的关键字，举一反三即可生成你想要的小牌子
+给大家附上我自己带图标的小牌子 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">align</span>=<span class="string">"center"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">title</span>=<span class="string">"github"</span> <span class="attr">target</span>=<span class="string">"_blank"</span> <span class="attr">href</span>=<span class="string">"https://github.com/fjqz177"</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"https://img.shields.io/badge/dynamic/json?label=GitHub&amp;suffix=%20followers&amp;query=%24.data.totalSubs&amp;url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dgithub%26queryKey%3Dfjqz177&amp;labelColor=282c34&amp;color=353940&amp;logo=github&amp;longCache=true"</span> &gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">title</span>=<span class="string">"weibo"</span> <span class="attr">target</span>=<span class="string">"_blank"</span> <span class="attr">href</span>=<span class="string">"https://weibo.com/5862441076/profile"</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"https://img.shields.io/badge/dynamic/json?labelColor=e71f19&amp;color=353940&amp;label=Weibo&amp;suffix=%20followers&amp;query=%24.data.totalSubs&amp;url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dweibo%26queryKey%3D5862441076&amp;logo=sina-weibo&amp;longCache=true"</span> &gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">title</span>=<span class="string">"zhihu"</span> <span class="attr">target</span>=<span class="string">"_blank"</span> <span class="attr">href</span>=<span class="string">"https://www.zhihu.com/people/fjqz177"</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"https://img.shields.io/badge/dynamic/json?color=353940&amp;labelColor=0084ff&amp;label=Zhihu&amp;suffix=%20followers&amp;query=%24.data.totalSubs&amp;url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dzhihu%26queryKey%3Dfjqz177&amp;logo=data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNjMzMjY1Mzc4NzU2IiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjUxNTMiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCI+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48L3N0eWxlPjwvZGVmcz48cGF0aCBkPSJNNTc2LjggODA3LjUyaDU3LjI4bDIwLjggNzIuNDggMTAwLjgtNzIuNDhoMTQxLjkyVjIyOS4yOEg1NzYuOHogbTY3Ljg0LTUxMy45Mkg4MzJ2NDQ4aC02Ni4yNGwtODUuMTIgNjQuOTYtMTguNTYtNjQuOTZoLTE3LjQ0ek0xMjYuNCA4ODQuNDhhMTQ5LjQ0IDE0OS40NCAwIDAgMCAxMjMuODQtMTAuNGM2MC45Ni0zNiAxMDUuOTItMTk0LjU2IDEwNS45Mi0xOTQuNTZsMTQ0IDE3Ny40NHMxMy4xMi04NC40OC0yLjI0LTEwOC4zMi05OS4wNC0xMTkuODQtOTkuMDQtMTE5Ljg0bC0zNi42NCAzMiAyNi4wOC0xMDQuOTZINTQ0czAtNjEuNzYtMzAuNTYtNjUuMjgtMTI1LjQ0IDAtMTI1LjQ0IDB2LTE5Mkg1MjhzLTEuNi02NC0yOC44LTY0SDI3MC41NmwzNS41Mi0xMDQuNjRzLTU3LjYgMy4zNi03Ny45MiAzOS4zNi04Ni40IDIyMS42LTg2LjQgMjIxLjYgMjEuOTIgMTAuMjQgNTkuMi0xNy4yOGExNDcuNjggMTQ3LjY4IDAgMCAwIDQ5LjI4LTc1LjUybDY3Ljg0LTMuMzZMMzIwIDQ5MS4ycy0xMTYuOTYtMS43Ni0xNDAuNjQgMC0zNy4yOCA2NS4yOC0zNy4yOCA2NS4yOEgzMjBzLTE1LjIgMTA4LjE2LTYwLjk2IDE4Ny4yLTEzMi42NCAxNDAuOC0xMzIuNjQgMTQwLjh6IiBmaWxsPSIjZmZmZmZmIiBwLWlkPSI1MTU0Ij48L3BhdGg+PC9zdmc+&amp;longCache=true"</span> &gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">title</span>=<span class="string">"bilibili"</span> <span class="attr">target</span>=<span class="string">"_blank"</span> <span class="attr">href</span>=<span class="string">"https://space.bilibili.com/436591517"</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"https://img.shields.io/badge/dynamic/json?color=353940&amp;labelColor=f27596&amp;label=Bilibili&amp;suffix=%20followers&amp;query=%24.data.totalSubs&amp;url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dbilibili%26queryKey%3D436591517&amp;logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAD7ElEQVR4nO2dW9WrMBCFK6ESkFAJSKiESqgEHCABCZWAhEpAAhL2ecik5dDc/pXLBDLfWnlqy0xmJ5BMQnq5CIIgCIIgCIIgCIIgCEIBAHQAemYfrgCunD6wAKAHsEKxALgx+bCQD8/S9tmgVqeDr1lLigDgZvDhXso+K9TyTBQRwRJ8AHjntl0Flh5QRAQK/mKxPeayWx2OXpBNBKiHvi34b7T2MC4pAvW6twR/RwkRKPizBN8CgEcuESj4Lwm+BwBjahEk+H8EwJRKhOaCDzW8e1JLfkUUH1NgmR3XmHffHR1l+72BSs8d7w8U+JDAnZERQMcV+CtUi7dNqFqibB4J7vtrq7xKCuAasbTMXCL4T+5aVk6+2xHUrWdhruAR6HIJcOeu2UHI8zyAe2ytWfEdWz9PVvQ8YAmIQ5dDAB9LFsMVAv8oMO2zAGrC5WNIarRiAuKR9jYEd9pY08aa6uUzIHGRdkgKd8pY0yc1WjEBAqypDYoAG0QAZkQAZkQAZkQAZk4vANQenjsSzS3I/wcSbXU5jQBUkRtdf4Rar90v8kSv3+I3ffCCSpk8I/w+lgDkdI/v2rEp2CaiWm1AsDQLlDAD+dlFXLMeAaCSeLZdaSFE5VUQNot38cKuEeBgAsSuG0flVZBmEanbXfNQAsS0fgBYIn2fIu3/BBMHEyBmDXlFfA8IzeHb+Ems4WAChKykrVA9ZfsQTL57jXzRg4A5wC/A8N4ADiZAZwm2XjW75Qh2KOTfA0p4kygPw28OJcCVgn3nDnYo2EwEYRgGH0qAMyICMCMCMCMCMCMCMCMCMCMCfP3qwHDOQ4AAUekTk8FaBRihJnZdYbvtCGC7LvmkM63GjVDINPFrQgCq5ETXfmMzI90FXzPvfqt7x4rEu/ZaEcCUxFvgz2zO+BUn6UkoaEEAsptiMSX5e8FoRYCN7cVgb4Vq7U/H50Pq4JNP7Qiw8UFnJwcK+tXy+Wj6PLEvPgHSHv5UgwA1IQIwwyFAyLJin9RoxYgAzAQIkPwNmf26busC+OIx5TDqo5nDT+F/SS/9CYzwb+No49zNy2evkYv0LywGGAXUvp6eSneycqOic0w20k7CNgKE7jJunSGLACTCxF27ylmQc98T5MQUH49swd+I0HPXslLKnT0N+wnkrTKi9JZL/L9i1SorMmdeQ4TQQ7OFMxIMzGD45w8nUL1im7efENZLJpgPSw0pfz0cdt4U3230Td/Tvx2R6d2FrHhEWLkq5PELOMsRPHCPnAZGv1xJteL7jbJiaW3sB2nDvPC/osSYvjRQz4cJ6n7KO3rYQL7M+L6nVtfDVRAEQRAEQRAEQRAEIZ5/SAXmdfXaoQsAAAAASUVORK5CYII=&amp;longCache=true"</span> &gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">title</span>=<span class="string">"coolapk"</span> <span class="attr">target</span>=<span class="string">"_blank"</span> <span class="attr">href</span>=<span class="string">"https://www.coolapk.com/u/3880429"</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"https://img.shields.io/badge/dynamic/json?color=30343b&amp;labelColor=17a15e&amp;label=Coolapk&amp;suffix=%20followers&amp;query=%24.data.totalSubs&amp;url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dcoolapk%26queryKey%3D3880429&amp;logo=data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiPjxkZWZzPjxzdHlsZS8+PC9kZWZzPjxwYXRoIGQ9Ik0xMjcuODkzIDQyNi42NjdjMjkuOTItNjYuOTg3IDk0LjUwNy0xMTYuNjk0IDE2Ni40LTEzMC4zNDcgNTUuNzg3LTkuNiAxMTIuOTYgNS4wNjcgMTYxLjkyIDMxLjk0N0M0OTcuNzYgMzQ5LjQ0IDUzNC40IDM3OC44OCA1NjcuOTQ3IDQxMS4wNGMtMTYuMTYgMTguNC0zOS4wOTQgMjguODUzLTU3LjQ5NCA0NC43NDctNDYuMTMzLTM4Ljg4LTk2LjY0LTc3LjcwNy0xNTcuOTczLTg3LjA5NC03OC45MzMtMTMuMTczLTE1OC41NiA0OS4yMjctMTcwLjUwNyAxMjcuMTQ3LTguNjkzIDQ1LjkyIDEwLjEzNCA5NC42NjcgNDUuMTc0IDEyNC45MDcgMzkuNjggMzQuOTg2IDk3LjIyNiA0NC41ODYgMTQ3LjYyNiAzMS4yNTMgNTcuNi0xMy45MiAxMDEuOTc0LTU3LjA2NyAxMzYuODU0LTEwMi43NzMgNTQuMDgtNzIuMTA3IDk5LjItMTUwLjQgMTQ3Ljg0LTIyNi4xMzQgMTMuOTItMTkuMTQ2IDQ3LjQxMy0xNy4yMjYgNTguNzIgMy44NCA2My42MjYgMTA5LjAxNCAxMjYuMDggMjE4LjcyIDE4OS42IDMyNy43ODcgNy41NzMgMTUuMDkzIDQuNDI2IDM1Ljc4Ny05LjYgNDYuMTMzLTEzLjA2NyAxMC42MTQtMzMuMzM0IDEwLjI0LTQ2LjEzNC0uNjkzYTk3MDY2LjU1OCA5NzA2Ni41NTggMCAwMS0yMjYuMTg2LTE2Mi43MmMxOC44OC0xNS4wNCAzOC40LTI5LjMzMyA1Ny45NzMtNDMuNDY3IDIzLjczMyAxMi45MDcgNDMuNzg3IDMzLjE3NCA2OS42IDQxLjY1NC0yMC4zNzMtMzkuNTc0LTQzLjYyNy03Ny43MDctNjYuMzQ3LTExNS45NDctNDIuNjY2IDU5LjE0Ny03Ny4wNjYgMTI0LjIxMy0xMjMuMTQ2IDE4MS4wNjdDNTE2IDY2My40NjcgNDQ4LjggNzE2Ljk2IDM2OC42NCA3MjguNDhjLTM4Ljg4IDMuNDEzLTc5LjMwNyA0LjIxMy0xMTYuMzczLTkuOTczLTUzLjQ5NC0xOS4xNDctMTAwLjMyLTU4LjcyLTEyNC41ODctMTEwLjU2LTI4LjIxMy01Ni4xMDctMjYuNzczLTEyNS4wMTQuMjEzLTE4MS4yOHoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=&amp;longCache=true"</span> &gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+只需将对应<code>title</code>后面的<code>href</code>里的链接替换成自己的，然后把<code>src</code>后面的链接里的<code>fjqz177</code>或者对应的<code>id</code>号改成自己的就可以了（<code>queryKey%3D</code>后面的那一串）
+&gt; 图标是使用 base64 将 svg 进行转码的，所以很长~~</p>
+<h1 id="贪吃蛇吃绿点">3.贪吃蛇吃绿点</h1>
+<p><img src="https://raw.githubusercontent.com/fjqz177/fjqz177/main/assets/github-contribution-grid-snake.svg"></p>
+<p>在仓库里点击<code>Creat new file</code> <img src="https://img-1316367741.cos.ap-shanghai.myqcloud.com/img/202301020102436.jpg">
+将<code>.github/workflows/generate_snake.yml</code>粘贴进图示框中 <img src="https://img-1316367741.cos.ap-shanghai.myqcloud.com/img/202301020105189.jpg">
+在底下的框中粘贴如下代码</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># GitHub Action for generating a contribution graph with a snake eating your contributions.</span></span><br><span class="line"></span><br><span class="line"><span class="attr">name:</span> <span class="string">Generate</span> <span class="string">Snake</span></span><br><span class="line"></span><br><span class="line"><span class="attr">on:</span></span><br><span class="line">  <span class="attr">schedule:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">cron:</span> <span class="string">"0 0 * * *"</span></span><br><span class="line">  <span class="attr">workflow_dispatch:</span></span><br><span class="line"></span><br><span class="line"><span class="attr">jobs:</span></span><br><span class="line">  <span class="attr">build:</span></span><br><span class="line">    <span class="attr">runs-on:</span> <span class="string">ubuntu-latest</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">steps:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Checkout</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">actions/checkout@v2.3.4</span></span><br><span class="line">      </span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Generate</span> <span class="string">Snake</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">Platane/snk@master</span></span><br><span class="line">        <span class="attr">id:</span> <span class="string">snake-gif</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">github_user_name:</span> <span class="string">${{</span> <span class="string">github.repository_owner</span> <span class="string">}}</span></span><br><span class="line">          <span class="attr">gif_out_path:</span> <span class="string">./assets/github-contribution-grid-snake.gif</span></span><br><span class="line">          <span class="attr">svg_out_path:</span> <span class="string">./assets/github-contribution-grid-snake.svg</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Push</span> <span class="string">to</span> <span class="string">GitHub</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">EndBug/add-and-commit@v7.2.1</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">branch:</span> <span class="string">main</span></span><br><span class="line">          <span class="attr">message:</span> <span class="string">'Generate Contribution Snake'</span></span><br></pre></td></tr></table></figure>
+<p>将如下粘贴进刚才的<code>.md</code>编辑器里 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![](https://raw.githubusercontent.com/fjqz177/fjqz177/main/assets/github-contribution-grid-snake.svg)</span><br></pre></td></tr></table></figure></p>
+<h1 id="github-stats-card-most-used-languages">4.GitHub Stats Card &amp;
+Most used languages</h1>
+<p>效果如下</p>
+<div data-align="center">
+<p><span>  </span>
+<img height="170px" src="https://github-readme-stats.vercel.app/api?username=fjqz177"><span>  </span><img height="170px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=fjqz177&layout=compact&langs_count=8">
+<span>  </span></p>
+</div>
+<p>代码放在这里了，只需将其中的<code>fjqz177</code>替换成你自己的<code>Github</code>名称即可</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">align</span>=<span class="string">"center"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="symbol">&amp;emsp;</span><span class="symbol">&amp;emsp;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">height</span>=<span class="string">"170px"</span> <span class="attr">src</span>=<span class="string">"https://github-readme-stats.vercel.app/api?username=fjqz177"</span> /&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="symbol">&amp;emsp;</span><span class="symbol">&amp;emsp;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">height</span>=<span class="string">"170px"</span> <span class="attr">src</span>=<span class="string">"https://github-readme-stats.vercel.app/api/top-langs/?username=fjqz177&amp;layout=compact&amp;langs_count=8"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="symbol">&amp;emsp;</span><span class="symbol">&amp;emsp;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h1 id="github-readme-activity-graphgithub-活动统计图">5.Github-Readme-Activity-Graph（GitHub
+活动统计图）</h1>
+<p><a target="_blank" rel="noopener" href="https://github.com/ashutosh00710/github-readme-activity-graph"><img src="https://github-readme-activity-graph.cyclic.app/graph?username=fjqz177&amp;theme=github-light" alt="Ashutosh's github activity graph"></a></p>
+<p>将其中的<code>fjqz177</code>替换成你自己的<code>Github</code>名称即可</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[![Ashutosh's github activity graph](https://github-readme-activity-graph.cyclic.app/graph?username=fjqz177&amp;theme=github-light)](https://github.com/ashutosh00710/github-readme-activity-graph)</span><br></pre></td></tr></table></figure>
+<h1 id="github-streakgithub-连续打卡-github-trophygithub-奖杯">6.GitHub
+Streak（GitHub 连续打卡） &amp; Github Trophy（Github 奖杯）</h1>
+<div data-align="center">
+<pre><code>&lt;img  src="https://github-readme-streak-stats.herokuapp.com/?user=fjqz177" /&gt;
+&lt;img  src="https://github-profile-trophy.vercel.app/?username=fjqz177" /&gt;</code></pre>
+</div>
+<p>将其中的<code>fjqz177</code>替换成你自己的<code>Github</code>名称即可</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">align</span>=<span class="string">"center"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span>  <span class="attr">src</span>=<span class="string">"https://github-readme-streak-stats.herokuapp.com/?user=fjqz177"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span>  <span class="attr">src</span>=<span class="string">"https://github-profile-trophy.vercel.app/?username=fjqz177"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h1 id="logo小牌子">7.Logo小牌子</h1>
+<p><img src="https://img-1316367741.cos.ap-shanghai.myqcloud.com/img/202301020114512.jpg">
+怎么样，这么多牌子挂出来是不是被吓到了呢 在这里需要用到<a target="_blank" rel="noopener" href="https://simpleicons.org/">Simpleicons</a>这个网站 以及如下模板
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&amp;logo=Git&amp;logoColor=white)</span><br></pre></td></tr></table></figure> <img src="https://img-1316367741.cos.ap-shanghai.myqcloud.com/img/202301020123481.jpg">
+&gt; 1.不会显示在外面，建议写上想要显示的Logo名称，方便管理 &gt;
+2.小牌子右边显示的文字，建议写上想要显示的Logo名称 &gt; 3.牌子的底色
+&gt; 4.显示的Logo</p>
+<p>打开上面的Simpleicon的网址，找到你想要的Logo <img src="https://img-1316367741.cos.ap-shanghai.myqcloud.com/img/202301020127540.jpg">
+将（1）的文字复制，替换掉1. 2. 4.的原有内容
+鼠标移到（2）上点一下即可复制，然后替换掉3.中原有内容，记得删除<code>#</code>号
+举一反三，想加什么自己加就行</p>
+<hr>
+<p>还没写完</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Markdown/" rel="tag"># Markdown</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/posts/6/" rel="prev" title="Markdown测试">
+      <i class="fa fa-chevron-left"></i> Markdown测试
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="nav-number">1.</span> <span class="nav-text">0.准备工作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B8%A6%E6%9C%89%E6%89%93%E5%AD%97%E7%89%B9%E6%95%88%E7%9A%84%E6%96%87%E5%AD%97"><span class="nav-number">2.</span> <span class="nav-text">1.带有打字特效的文字</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%A4%BE%E4%BA%A4%E5%85%B3%E6%B3%A8%E8%80%85%E6%95%B0%E7%9B%AE%E5%B0%8F%E7%89%8C%E5%AD%90"><span class="nav-number">3.</span> <span class="nav-text">2.社交关注者数目小牌子</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%B4%AA%E5%90%83%E8%9B%87%E5%90%83%E7%BB%BF%E7%82%B9"><span class="nav-number">4.</span> <span class="nav-text">3.贪吃蛇吃绿点</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#github-stats-card-most-used-languages"><span class="nav-number">5.</span> <span class="nav-text">4.GitHub Stats Card &amp;
+Most used languages</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#github-readme-activity-graphgithub-%E6%B4%BB%E5%8A%A8%E7%BB%9F%E8%AE%A1%E5%9B%BE"><span class="nav-number">6.</span> <span class="nav-text">5.Github-Readme-Activity-Graph（GitHub
+活动统计图）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#github-streakgithub-%E8%BF%9E%E7%BB%AD%E6%89%93%E5%8D%A1-github-trophygithub-%E5%A5%96%E6%9D%AF"><span class="nav-number">7.</span> <span class="nav-text">6.GitHub
+Streak（GitHub 连续打卡） &amp; Github Trophy（Github 奖杯）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#logo%E5%B0%8F%E7%89%8C%E5%AD%90"><span class="nav-number">8.</span> <span class="nav-text">7.Logo小牌子</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="fjqz177"
+      src="/images/my_avatar.jpg">
+  <p class="site-author-name" itemprop="name">fjqz177</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/fjqz177" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;fjqz177" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/fjqz177@139.com" title="E-Mail → fjqz177@139.com"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/u/5862441076" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;u&#x2F;5862441076" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">fjqz177</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">25k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">22 分钟</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  
+  <script color='255,255,255' opacity='0.6' zIndex='-1' count='150' src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+if (document.querySelectorAll('pre.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
+    mermaid.initialize({
+      theme    : 'default',
+      logLevel : 3,
+      flowchart: { curve     : 'linear' },
+      gantt    : { axisFormat: '%m/%d/%Y' },
+      sequence : { actorMargin: 50 }
+    });
+  }, window.mermaid);
+}
+</script>
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'sOHn0nk7MNCH5aJPMaRsap68-gzGzoHsz',
+      appKey     : '8cwjoCV2IhxqqlVyLdZ96lqe',
+      placeholder: "Just go go",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true}});</script></body>
+</html>
