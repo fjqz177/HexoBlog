@@ -15,6 +15,7 @@ abbrlink: 7
 接下来就教你们如何装逼
 
 <!--more-->
+# 注意，本文许多网站需要科学上网才能使用，请自备科学上网工具  
 
 # 0.准备工作
 
@@ -26,9 +27,12 @@ abbrlink: 7
 # 1.带有打字特效的文字
 
 打字特效生成网站：[Readme Typing SVG - Demo Site](https://readme-typing-svg.herokuapp.com/demo/)
+
 ![](https://img-1316367741.cos.ap-shanghai.myqcloud.com/img/202301012350411.jpg)
+
 里面有很多自定义选项，大家可以根据自己喜好进行调整
 调整完以后点击`Markdown`下的`Copy To Clipboard`，然后粘贴进刚才的`.md`编辑器里
+
 效果图
 <p align="center">
     <a href="https://fjqz177.github.io"><img src="https://readme-typing-svg.herokuapp.com?font=consolas&weight=100&size=45&duration=4000&pause=4000&center=%E7%9C%9F%E7%9A%84&vCenter=%E7%9C%9F%E7%9A%84&multiline=true&width=420&height=70&lines=fjqz177.github.io" alt="Typing SVG" /></a>
@@ -38,29 +42,29 @@ abbrlink: 7
 
 用 Substats 配合[shields.io](https://www.shields.io)制作动态小牌子  
 
-
-  
-动态图标  
-  
 创建动态图标方法：点击进入这个网页 [shields.io dynamic-badge](https://shields.io/#dynamic-badge)  
   
-> `data type`选择`json`
-> `label`写上数据牌左侧你想展示的文字，比如我想展示的是`GitHub`
-> `data url`，找到自己想展示的`API URL`，比如我的`GitHub URL`就是：`https://api.spencerwoo.com/substats/?source=github&queryKey=fjqz177`。一般都只需要修改`source`后面的目标服务器以及`queryKey`后面的请求数据标签，前者一般都是平台名，后者一般都是用户名
-> `query`填：`$.data.totalSubs`
-> `color`填写一个十六进制的颜色代码，前面不加#
-> 剩下两个分别是数据牌右侧展示数据的前缀和后缀，前缀可以不填，后缀可选填`followers`
+> `data type`选择`json`  
+> `label`写上数据牌左侧你想展示的文字，比如我想展示的是`GitHub`  
+> `data url`，找到自己想展示的`API URL`，比如我的`GitHub URL`就是：`https://api.spencerwoo.com/substats/?source=github&queryKey=fjqz177`。一般都只需要修改`source`后面的目标服务器以及`queryKey`后面的请求数据标签，前者一般都是平台名，后者一般都是用户名  
+> `query`填：`$.data.totalSubs`  
+> `color`填写一个十六进制的颜色代码，前面不加#  
+> 剩下两个分别是数据牌右侧展示数据的前缀和后缀，前缀可以不填，后缀可选填`followers`  
 
 ![](https://img-1316367741.cos.ap-shanghai.myqcloud.com/img/202301020010223.png)
 然后点击`Make Badge`即可生成
 以如下格式填入刚才生成的链接，并把它粘贴进`.md`编辑器内
-```
+
+```markdown
 ![](https://img.shields.io/badge/dynamic/json?color=272626&label=Github&query=%24.data.totalSubs&suffix=%20followers&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dgithub%26queryKey%3Dfjqz177)
 ```
+
 效果如下
 ![](https://img.shields.io/badge/dynamic/json?color=272626&label=Github&query=%24.data.totalSubs&suffix=%20followers&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dgithub%26queryKey%3Dfjqz177)
+
 大家可以查阅`Substats API`的文档：[Home | Substats Docs (spencerwoo.com)](https://substats.spencerwoo.com/)看看支持哪些平台以及`source`后面的目标服务器的关键字，举一反三即可生成你想要的小牌子
 给大家附上我自己带图标的小牌子
+
 ```html
 <p align="center">
 <a title="github" target="_blank" href="https://github.com/fjqz177"><img src="https://img.shields.io/badge/dynamic/json?label=GitHub&suffix=%20followers&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dgithub%26queryKey%3Dfjqz177&labelColor=282c34&color=353940&logo=github&longCache=true" ></a>
@@ -70,6 +74,7 @@ abbrlink: 7
 <a title="coolapk" target="_blank" href="https://www.coolapk.com/u/3880429"><img src="https://img.shields.io/badge/dynamic/json?color=30343b&labelColor=17a15e&label=Coolapk&suffix=%20followers&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dcoolapk%26queryKey%3D3880429&logo=data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiPjxkZWZzPjxzdHlsZS8+PC9kZWZzPjxwYXRoIGQ9Ik0xMjcuODkzIDQyNi42NjdjMjkuOTItNjYuOTg3IDk0LjUwNy0xMTYuNjk0IDE2Ni40LTEzMC4zNDcgNTUuNzg3LTkuNiAxMTIuOTYgNS4wNjcgMTYxLjkyIDMxLjk0N0M0OTcuNzYgMzQ5LjQ0IDUzNC40IDM3OC44OCA1NjcuOTQ3IDQxMS4wNGMtMTYuMTYgMTguNC0zOS4wOTQgMjguODUzLTU3LjQ5NCA0NC43NDctNDYuMTMzLTM4Ljg4LTk2LjY0LTc3LjcwNy0xNTcuOTczLTg3LjA5NC03OC45MzMtMTMuMTczLTE1OC41NiA0OS4yMjctMTcwLjUwNyAxMjcuMTQ3LTguNjkzIDQ1LjkyIDEwLjEzNCA5NC42NjcgNDUuMTc0IDEyNC45MDcgMzkuNjggMzQuOTg2IDk3LjIyNiA0NC41ODYgMTQ3LjYyNiAzMS4yNTMgNTcuNi0xMy45MiAxMDEuOTc0LTU3LjA2NyAxMzYuODU0LTEwMi43NzMgNTQuMDgtNzIuMTA3IDk5LjItMTUwLjQgMTQ3Ljg0LTIyNi4xMzQgMTMuOTItMTkuMTQ2IDQ3LjQxMy0xNy4yMjYgNTguNzIgMy44NCA2My42MjYgMTA5LjAxNCAxMjYuMDggMjE4LjcyIDE4OS42IDMyNy43ODcgNy41NzMgMTUuMDkzIDQuNDI2IDM1Ljc4Ny05LjYgNDYuMTMzLTEzLjA2NyAxMC42MTQtMzMuMzM0IDEwLjI0LTQ2LjEzNC0uNjkzYTk3MDY2LjU1OCA5NzA2Ni41NTggMCAwMS0yMjYuMTg2LTE2Mi43MmMxOC44OC0xNS4wNCAzOC40LTI5LjMzMyA1Ny45NzMtNDMuNDY3IDIzLjczMyAxMi45MDcgNDMuNzg3IDMzLjE3NCA2OS42IDQxLjY1NC0yMC4zNzMtMzkuNTc0LTQzLjYyNy03Ny43MDctNjYuMzQ3LTExNS45NDctNDIuNjY2IDU5LjE0Ny03Ny4wNjYgMTI0LjIxMy0xMjMuMTQ2IDE4MS4wNjdDNTE2IDY2My40NjcgNDQ4LjggNzE2Ljk2IDM2OC42NCA3MjguNDhjLTM4Ljg4IDMuNDEzLTc5LjMwNyA0LjIxMy0xMTYuMzczLTkuOTczLTUzLjQ5NC0xOS4xNDctMTAwLjMyLTU4LjcyLTEyNC41ODctMTEwLjU2LTI4LjIxMy01Ni4xMDctMjYuNzczLTEyNS4wMTQuMjEzLTE4MS4yOHoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=&longCache=true" ></a>
 </p>
 ```
+
 只需将对应`title`后面的`href`里的链接替换成自己的，然后把`src`后面的链接里的`fjqz177`或者对应的`id`号改成自己的就可以了（`queryKey%3D`后面的那一串）
 > 图标是使用 base64 将 svg 进行转码的，所以很长~~
 
@@ -152,10 +157,8 @@ jobs:
 
 # 6.GitHub Streak（GitHub 连续打卡） & Github Trophy（Github 奖杯）
 
-<div align="center">
-    <img  src="https://github-readme-streak-stats.herokuapp.com/?user=fjqz177" />
-    <img  src="https://github-profile-trophy.vercel.app/?username=fjqz177" />
-</div>
+![](https://github-readme-streak-stats.herokuapp.com/?user=fjqz177)
+![](https://github-profile-trophy.vercel.app/?username=fjqz177)
 
 将其中的`fjqz177`替换成你自己的`Github`名称即可
 
@@ -176,16 +179,17 @@ jobs:
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=Git&logoColor=white)
 ```
 ![](https://img-1316367741.cos.ap-shanghai.myqcloud.com/img/202301020123481.jpg)
-> 1.不会显示在外面，建议写上想要显示的Logo名称，方便管理
-> 2.小牌子右边显示的文字，建议写上想要显示的Logo名称
-> 3.牌子的底色
-> 4.显示的Logo
 
-打开上面的Simpleicon的网址，找到你想要的Logo
+> ①不会显示在外面，建议写上想要显示的Logo名称，方便管理  
+> ②小牌子右边显示的文字，建议写上想要显示的Logo名称  
+> ③牌子的底色  
+> ④显示的Logo  
+
+打开上面的[Simpleicons](https://simpleicons.org/)的网址，找到你想要的Logo
 ![](https://img-1316367741.cos.ap-shanghai.myqcloud.com/img/202301020127540.jpg)
-将（1）的文字复制，替换掉1. 2. 4.的原有内容
-鼠标移到（2）上点一下即可复制，然后替换掉3.中原有内容，记得删除`#`号
+将（1）中的文字复制，替换掉①②④的原有内容
+鼠标移到（2）上点一下即可复制，然后替换掉③中原有内容，记得删除`#`号
 举一反三，想加什么自己加就行
 
----
-还没写完
+# 8.最后在编辑器内进行排版，排成你自己想要的效果，复制进github仓库内，即可完成
+喜欢的话可以到[我的Github个人主页](https://github.com/fjqz177)点一个Follow哦！
